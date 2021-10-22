@@ -8,7 +8,7 @@ int tarif[2][1000];//номер такси, тариф
 int dist[2][1000];//номер сотрудника, расстояние
 int arr[2][1000];//вывод: номер сотрудника, номер такси
 
-int vvod_dist(int dist[2][1000], int n)
+int vvod_dist(int dist[2][1000], int n) //Функция ввода расстояния от работы до дома
 {
     for (int i = 0; i < n; i++)
     {
@@ -19,7 +19,7 @@ int vvod_dist(int dist[2][1000], int n)
     return 0;
 }
 
-int sort_dist(int dist[2][1000], int n)
+int sort_dist(int dist[2][1000], int n) // Функция сортировки расстояния по возрастанию
 {
     for (int j = 0;  j < n - 1; j++) {
         for (int i = 0; i < n - 1; i++) {
@@ -33,7 +33,7 @@ int sort_dist(int dist[2][1000], int n)
     return 0;
 }
 
-int vvod_tarif(int tarif[2][1000], int n)
+int vvod_tarif(int tarif[2][1000], int n) // Функция ввода тарифа
 {
     for (int i = 0; i < n; i++)
     {
@@ -44,7 +44,7 @@ int vvod_tarif(int tarif[2][1000], int n)
     return 0;
 }
 
-int sort_tarif(int tarif[2][1000], int n)
+int sort_tarif(int tarif[2][1000], int n) // Сортировка тарифа по убыванию
 {
     for (int j = 0; j < n - 1; j++) {
         for (int i = 0; i < n - 1; i++) {
@@ -58,7 +58,7 @@ int sort_tarif(int tarif[2][1000], int n)
     return 0;
 }
 
-int print(int tarif[2][1000], int dist[2][1000], int arr[2][1000], int n)
+int print(int tarif[2][1000], int dist[2][1000], int arr[2][1000], int n) // Функция вывода результата на экран
 {
     for (int i = 0; i < n; i++)//цикл для присвоения номеров такси
     {
